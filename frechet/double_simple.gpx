@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ohai>
+<gpx>
+    <wpt lon="160" lat="32" />
+    <wpt lon="256" lat="400" />
+</gpx>
+<gpx>
+    <wpt lon="16" lat="208" />
+    <wpt lon="384" lat="208" />
+</gpx>
+</ohai>
