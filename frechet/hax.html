@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Fr&eacute;chet Distance</title>
+        <meta name="viewport" content="width=device-width,user-scalable=no">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+            window.gpxFile = "example2.gpx";
+            window.epsilon = 0;
+            window.showMark1 = true;
+            window.showMark2 = true;
+            window.showDiagramX = false;
+            window.showDiagramY = false;
+            window.showDiagramDiagonal = false;
+            window.showAsInterval = false;
+            window.trajectoryInteraction = true;
+            window.diagramInteraction = true;
+        </script>
+        
+        <div class="container-fluid">
+            <h1><img src='logo.jpg' />&nbsp;&nbsp;&nbsp;Fr&eacute;chet Distance: Free-Space Diagram</small></h1>
+            <hr />
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-sm-6">
+                    <!-- <h2>Trajectory</h2> -->
+                    <canvas id="trajectory" width="620" height="620">
+                        Trajectory
+                    </canvas>
+                </div>
+                    
+                <!-- Second Column -->
+                <div class="col-sm-6">
+                    <!-- <h2>Parameter space</h2> -->
+                    <canvas id="diagram" width="620" height="620">
+                        Frechet Diagram
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="jquery-2.1.4.js">
+        </script>
+        <script type="text/javascript" src="frechet2.js">
+        </script>
+
+    </body>
+
+</html>

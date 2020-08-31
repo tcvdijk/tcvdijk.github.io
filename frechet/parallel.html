@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>There and back again: Using Fr&eacute;chet-Distance Diagrams to Find Trajectory Turning Points</title>
+        <meta name="viewport" content="width=device-width,user-scalable=no">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+            window.gpxFile = "hole-parallel.gpx";
+            window.epsilon = 0;
+            window.showMark1 = true;
+            window.showMark2 = true;
+            window.showDiagramX = false;
+            window.showDiagramY = false;
+            window.showDiagramDiagonal = false;
+            window.showAsInterval = true;
+            window.trajectoryInteraction = true;
+            window.diagramInteraction = false;
+        </script>
+        <div class="container-fluid">
+            <h1><img src='logo.jpg' />&nbsp;&nbsp;&nbsp;There and back again<small> Using Fr&eacute;chet-Distance Diagrams to Find Trajectory Turning Points</small></h1>
+            <hr />
+            <p class="lead">
+                This sample trajectory has two parallel segments that pass close to each other, but in reverse.<br />
+                Pinch or drag on the trajectory to set radius &epsilon; to different values.
+            </p>
+            <div class="btn-group-custom">
+                <a href="index.html" class="btn btn-primary">Parameter space 1</a>
+                <a href="xy.html" class="btn btn-primary">Parameter space 2</a>
+                <a href="interval.html" class="btn btn-primary">Intervals</a>
+            </div>
+            <div class="btn-group-custom">
+                <a href="parallel.html" class="btn btn-primary active">Parallel</a>
+                <a href="parallel2.html" class="btn btn-primary">Parallel 2</a>
+                <a href="zigzag.html" class="btn btn-primary">Zig zag</a>
+                <a href="hotspot.html" class="btn btn-primary">Hotspot</a>
+            </div>
+            <div class="btn-group-custom">
+                <a href="paper1.html" class="btn btn-primary">Real 1</a>
+                <a href="paper2.html" class="btn btn-primary">Real 2</a>
+            </div>
+            <hr />
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-sm-6">
+                    <!-- <h2>Trajectory</h2> -->
+                    <canvas id="trajectory" width="620" height="620">
+                        Trajectory
+                    </canvas>
+                </div>
+                    
+                <!-- Second Column -->
+                <div class="col-sm-6">
+                    <!-- <h2>Parameter space</h2> -->
+                    <canvas id="diagram" width="620" height="620">
+                        Frechet Diagram
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="jquery-2.1.4.js">
+        </script>
+        <script type="text/javascript" src="frechet.js">
+        </script>
+
+    </body>
+
+</html>
