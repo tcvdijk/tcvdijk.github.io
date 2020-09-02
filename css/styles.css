@@ -13,6 +13,11 @@ em {
   color: #b34a57;
 }
 
+.abstract {
+  color: #5d616e;
+  font-style: normal;
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -10038,11 +10043,6 @@ p.lead {
   font-weight: 400;
 }
 
-blockquote {
-  font-style: italic;
-  color: #adb5bd;
-}
-
 .softcard {
   width: 18rem;
 }
@@ -10052,6 +10052,28 @@ blockquote {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+.card {
+  border-radius: 3px;
+  box-shadow: 0 24px 26px -11px rgba(0, 0, 0, 0.09);
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+  margin-bottom: 20px;
+}
+.card-header {
+  background: none;
+  border-bottom: none;
+  font-size: 1.125rem;
+  padding: 0;
+}
+.card-header a {
+  position: relative;
+  color: #b34a57;
+  display: block;
+  padding: 0.625rem 1.25rem;
+  transition: all 0.8s;
+  background-color: #f8f8f8;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
