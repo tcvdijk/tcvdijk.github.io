@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Thomas van Dijk</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -50,11 +50,9 @@
                     <p class="lead mb-5">I am an applied algorithms researcher working on geographic information systems (GIS), information visualisation, historical information, and algorithmically-guided user interaction.</p>
                     <blockquote>
                         Download full CV as PDF
-                        <a href="cv.pdf">here</a>
+                        <a href="assets/cv.pdf">here</a>
                     </blockquote>
                     <div class="social-icons">
-                        <!--a.social-icon(href='#')-->
-                        <!--    i.fab.fa-linkedin-in-->
                         <a class="social-icon" href="https://github.com/tcvdijk"><i class="fab fa-github"></i></a>
                         <a class="social-icon" href="https://twitter.com/tvdmaps"><i class="fab fa-twitter"></i></a>
                         <a class="social-icon" href="https://www.youtube.com/channel/UC1HyTDhSabzhFp5RT8yQWBw"><i class="fab fa-youtube"></i></a>
@@ -72,16 +70,17 @@
                             <div class="subheading mb-3">DFG eigene Stelle, Principal Investigor (three years)</div>
                             <p>independently developed and wrote proposal (Di 2161/2-2) in Priority Programme 1894 “Volunteered Geographic Information.” This funds my current position in Würzburg.</p>
                             <div class="card">
-                                <div class="card-header"><a class="card-link" data-toggle="collapse" href="#colDFG2">Abstract</a></div>
-                                <div class="collapse" id="colDFG2">
+                                <div class="card-header"><a class="card-link" data-toggle="collapse" href="#col_dfg2">Abstract</a></div>
+                                <div class="collapse" id="col_dfg2">
                                     <div class="card-body">
                                         <blockquote class="abstract">
                                             The use of crowdsourcing provides a big opportunity for many sciences, such as geographic information science and the digital humanities. A particular application that has seen a big boom of crowd projects is the extraction of information from historical documents, since this involves many problems that continue to elude fully-automatic solutions. Numerous projects have sprung up, some with notable success (such as GB1900, Transkribus and Maps-in-the-Crowd). However, the use of volunteered information comes with major concerns about data quality. In this project we investigate novel methods for quality assessment in crowdsourcing projects: not just checking the quality at the end, but viewing the entire crowdsourcing process as a computation where we need to be careful about data quality throughout. In doing so, we open up a range of mathematical and algorithmic techniques, including Bayesian modelling, optimal task selection based on active
                                             learning, and sensitivity analysis.
                                         </blockquote>
                                         <blockquote class="abstract">
-                                            Our prior experience indicates that this is not only of theoretical interest, but will indeed result in practically useful systems that outperform ad-hoc approaches. We take historical material as the main source of our experimental material, as well as considering more modern data. This serves two purposes. Firstly, this brings us closer to the other projects in the priority programme. Secondly, the methodology we have developed so far (and will continue to develop) is generally applicable: we will validate this by applying it more broadly. Fruitful applications include image recognition tasks (such as those encountered in the ENAP and COVMAP projects) and information extraction from microblogs (EVA-VGI). Through this project, we will arrive at a more refined understanding of how the power of crowdsourcing can be harnessed - by paying specific attention to the quality of data as it moves through a project, and designing
-                                            algorithmically-supported processes to guide it.
+                                            Our prior experience indicates that
+                                            <em class="extra">this is not only of theoretical interest, but will indeed result in practically useful systems that outperform ad-hoc approaches.</em>
+                                            We take historical material as the main source of our experimental material, as well as considering more modern data. This serves two purposes. Firstly, this brings us closer to the other projects in the priority programme. Secondly, the methodology we have developed so far (and will continue to develop) is generally applicable: we will validate this by applying it more broadly. Fruitful applications include image recognition tasks (such as those encountered in the ENAP and COVMAP projects) and information extraction from microblogs (EVA-VGI). Through this project, we will arrive at a more refined understanding of how the power of crowdsourcing can be harnessed - by paying specific attention to the quality of data as it moves through a project, and designing algorithmically-supported processes to guide it.
                                         </blockquote>
                                     </div>
                                 </div>
@@ -95,14 +94,18 @@
                             <div class="subheading mb-3">DFG eigene Stelle, Principal Investigor (3 years)</div>
                             <p>Developed proposal; co-wrote with Prof. Alexander Wolff. (Di 2161/2-1) in Priority Programme 1894 “Volunteered Geographic Information.” This funded my own position in Würzburg.</p>
                             <div class="card">
-                                <div class="card-header"><a class="card-link" data-toggle="collapse" href="#colDFG1">Abstract</a></div>
-                                <div class="collapse" id="colDFG1">
+                                <div class="card-header"><a class="card-link" data-toggle="collapse" href="#col_dfg1">Abstract</a></div>
+                                <div class="collapse" id="col_dfg1">
                                     <div class="card-body">
                                         <blockquote class="abstract">
                                             There are many practical problems that currently cannot be solved by algorithmic means, not because our algorithms are too slow but because we have no satisfactory algorithm at all. An example for such a practical problem is the extraction of meaningful metadata from historical maps. The problem has so far defied automation, which is very unfortunate because old maps contain lots of useful information, e.g., for historians, economists, and city planners. Libraries are producing massive amounts of digitised maps by scanning their historical collections, but struggle to “understand” the contents of these collections: computer-vision algorithms are not up to the task of extracting the desired metadata and there are too many maps to do it by hand. We will attack these problems by developing smart crowdsourcing solutions. With our collaborators (such as three libraries and the Open Historical Data Map project) we will attack real problems on real
                                             data.
                                         </blockquote>
-                                        <blockquote class="abstract">Most crowdsourcing applications rely on the crowd’s most obvious power: its multitude. If we throw enough users at a problem, we may solve it by brute force. But just like brute-force algorithms are often grossly inefficient, so is the indiscriminate application of human effort. In the proposed project we will develop algorithmically-guided, adaptive user interaction where the algorithm and (sets of) users cooperate to efficiently and reliably solve a problem instance. This is achieved through proper algorithmic modeling of the underlying computational problems, followed by techniques such as active learning (efficient task selection) and sensitivity analysis (quality assurance).</blockquote>
+                                        <blockquote class="abstract">
+                                            Most crowdsourcing applications rely on the crowd’s most obvious power: its multitude. If we throw enough users at a problem, we may solve it by brute force.
+                                            <em class="extra">But just like brute-force algorithms are often grossly inefficient, so is the indiscriminate application of human effort. In the proposed project we will develop algorithmically-guided, adaptive user interaction</em>
+                                            where the algorithm and (sets of) users cooperate to efficiently and reliably solve a problem instance. This is achieved through proper algorithmic modeling of the underlying computational problems, followed by techniques such as active learning (efficient task selection) and sensitivity analysis (quality assurance).
+                                        </blockquote>
                                         <blockquote class="abstract">Through this project, we will arrive at a more refined understanding of how the power of crowdsourcing can be harnessed – for generating general geographic data, as well as specifically for metadata extraction from historical maps. What are the correct notions of efficiency and what are the algorithmic techniques to optimise it?</blockquote>
                                     </div>
                                 </div>
@@ -116,12 +119,15 @@
                             <div class="subheading mb-3">Promotionsstipendium der Studienstiftung des deutschen Volkes (3 years)</div>
                             <p>Developed and co-wrote Benedikt Budig’s proposal for his PhD student grapht; this funded him for three years as my PhD student.</p>
                             <div class="card">
-                                <div class="card-header"><a class="card-link" data-toggle="collapse" href="#colBudig">Abstract of Benedikt's thesis</a></div>
-                                <div class="collapse" id="colBudig">
+                                <div class="card-header"><a class="card-link" data-toggle="collapse" href="#col_bene">Abstract of Benedikt's thesis</a></div>
+                                <div class="collapse" id="col_bene">
                                     <div class="card-body">
                                         <blockquote class="abstract">Historical maps are fascinating documents and a valuable source of information for scientists of various disciplines. Many of these maps are available as scanned bitmap images, but in order to make them searchable in useful ways, a structured representation of the contained information is desirable.</blockquote>
                                         <blockquote class="abstract">This book deals with the extraction of spatial information from historical maps. This cannot be expected to be solved fully automatically (since it involves difficult semantics), but is also too tedious to be done manually at scale.</blockquote>
-                                        <blockquote class="abstract">The methodology used in this book combines the strengths of both computers and humans: it describes efficient algorithms to largely automate information extraction tasks and pairs these algorithms with smart user interactions to handle what is not understood by the algorithm. The effectiveness of this approach is shown for various kinds of spatial documents from the 16th to the early 20th century.</blockquote>
+                                        <blockquote class="abstract">
+                                            <em class="extra">The methodology used in this book combines the strengths of both computers and humans: it describes efficient algorithms to largely automate information extraction tasks and pairs these algorithms with smart user interactions to handle what is not understood by the algorithm.</em>
+                                            The effectiveness of this approach is shown for various kinds of spatial documents from the 16th to the early 20th century.
+                                        </blockquote>
                                     </div>
                                 </div>
                             </div>
@@ -139,7 +145,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Universität Würzburg</h3>
                             <div class="subheading mb-3">Independent Postdoc</div>
-                            <div>Independent postdoc at Universität Würzburg at Prof. Alexander Wolff’s Lehrstuhl für Informatik I: Algorithmen und Komplexität, working on algorithms for geographic information systems (GIS), information visualisation, historical information, and algorithmically-guided user interaction.</div>
+                            <p>Independent postdoc at Universität Würzburg at Prof. Alexander Wolff’s Lehrstuhl für Informatik I: Algorithmen und Komplexität, working on algorithms for geographic information systems (GIS), information visualisation, historical information, and algorithmically-guided user interaction.</p>
                             <p>Funded by my own grants since Fall 2016.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Jan. 2016 - present</span></div>
@@ -148,7 +154,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Universität Würzburg</h3>
                             <div class="subheading mb-3">Postdoc "Algorithms for Interactive Variable-Scale Maps"</div>
-                            <div>DFG project, principal investigator: Jan-Henrik Haunert.</div>
+                            <p>DFG project, principal investigator: Jan-Henrik Haunert.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Jan. 2012 - Jan. 2016</span></div>
                     </div>
@@ -156,7 +162,23 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Universiteit Utrecht</h3>
                             <div class="subheading mb-3">PhD project "Wireless Sensor Networks: Structure &amp; Algorithms"</div>
-                            <div>Chair for Algorithmic Systems. Advisor: Jan van Leeuwen.</div>
+                            <p>Chair for Algorithmic Systems. Advisor: Jan van Leeuwen.</p>
+                            <div class="card">
+                                <div class="card-header"><a class="card-link" data-toggle="collapse" href="#col_phd">Introduction</a></div>
+                                <div class="collapse" id="col_phd">
+                                    <div class="card-body">
+                                        <p>
+                                            Full introduction:
+                                            <a href="assets/thesis_intro.pdf">PDF</a>
+                                        </p>
+                                        <blockquote>(...)</blockquote>
+                                        <blockquote>In dealing with these topics, we will have touched on many aspects of wireless sensor networks, their structure and the related algorithms. Before the thesis proper begins, let us briefly draw attention to two divisions that it contains. The first is readily apparent from the table of contents: a Part I about physical models and a Part II about graphical models. This is a technical divide and merely a result of organising the material.</blockquote>
+                                        <blockquote>The second divide is methodological in nature and a divide that, where possible, we have tried to bridge. On the one hand, we have theoretical, worst-case results about the runtime of algorithms and the structural properties of wireless networks. On the other hand, we have experimental results based on implementations of our algorithms and on simulations. These two approaches are sometimes seen as being at odds with each other—indeed, as the saying goes: “In theory, theory and practice are the same. In practice, they are not.” In recognising this difference, we find that in fact theoretical and experimental research complement each other to give a more comprehensive view of the subject.</blockquote>
+                                        <blockquote>As an example in this thesis, we can point to Chapters 4 and 5 about the Link independent set problem. Even though Chapter 4 is mainly concerned with the formal correctness and worst-case runtime of an algorithm, the design of the algorithm was very much informed by experiments in the early stages of the research. Then, in Chapter 5 we complement the worst-case result with runtime measurements on an actual implementation of the algorithm. With this implementation we observe some structural properties of wireless networks and, moving to theory again, continue to prove some of the observed behaviour. As another example, the concept of a regular schedule (Chapter 3) and the corresponding theorems were inspired by the experimental results in Table 3.2. In these ways, there is a back and forth between theoretical and experimental results.</blockquote>
+                                        <em class="extra">It is important to not be satisfied too easily with experimental appearances: models and theories are what computer science is built on, for good reason. Yet a theorem might not tell the whole story, and pure theory might not be how we arrive at a result.</em>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Sept. 2007 - Sept. 2011</span></div>
                     </div>
@@ -173,13 +195,12 @@
                             <div class="subheading mb-3">MSc Applied Computing Science (with honours)</div>
                             <p>Thesis: Fixed Parameter Tractability of Feedback Set Problems</p>
                             <div class="card">
-                                <div class="card-header"><a class="card-link" data-toggle="collapse" href="#colBudig">Abstract</a></div>
-                                <div class="collapse" id="colBudig">
+                                <div class="card-header"><a class="card-link" data-toggle="collapse" href="#col_msc">Abstract</a></div>
+                                <div class="collapse" id="col_msc">
                                     <div class="card-body">
-                                        <blockquote class="abstract">
-                                            The FEEDBACK VERTEX SET problem on unweighted, undirected graphs is considered. Improving upon a result by Burrage et al. (Proceedings 2nd International Workshop on Parameterized and Exact Computation, pp. 192–202, 2006), we show that this problem has a kernel with O(k^3) vertices, i.e., there is a polynomial time algorithm, that given a graph G and an integer k, finds a graph G′ with O(k^3) vertices and integer k′≤k, such that G has a feedback vertex set of size at most k, if and only if G′ has a feedback vertex set of size at most k′. Moreover, the algorithm can be made constructive: if the reduced instance G′ has a feedback vertex set of size k′, then we can easily transform a minimum size feedback vertex set of G′ into a minimum size feedback vertex set of G. This kernelization algorithm can be used as the first step of an FPT algorithm for FEEDBACK VERTEX SET, but also as a preprocessing heuristic for FEEDBACK VERTEX SET.
-                                        </blockquote>
-                                        <blockquote class="abstract">We also show that the related LOOP CUTSET problem has a kernel of cubic size. The kernelization algorithms are experimentally evaluated, and we report on these experiments.</blockquote>
+                                        <blockquote class="abstract">One of the classic NP-complete problems is Feedback Vertex Set: in an undirected graph, remove the least possible number of vertices such that the resulting graph is acyclic. In the theory of fixed parameter complexity, a 'kernelization' is a preprocessing algorithm with a proven quality guarantee; this thesis extendeds work by Bodlaender, who has shown that the Feedback Vertex Set problem, parameterized on the size of the solution, has a kernelization to cubic size.</blockquote>
+                                        <blockquote class="abstract">We have extended this kernelization algorithm to work on Loop Cutset (a problem related to Feedback Vertex Set, arising in inference in probabilistic networks) and provide additional analysis of the algorithm.</blockquote>
+                                        <blockquote class="abstract">Furthermore, we have implemented these kernelization algorithms and experimentally show that they perform well in practice, both regarding their runtime and their effect on the size of the instance. We also show that the kernelization significantly speeds up the calculation of an exact feedback vertex set/loop cutset, i.e.: it is an effective preprocessing.</blockquote>
                                     </div>
                                 </div>
                             </div>
@@ -212,11 +233,11 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Software</h2>
                     <div class="subheading mb-3">Information Visualisation</div>
-                    <div class="row mb-3">
+                    <div class="row">
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/fast-linear-carto.png" />
-                                <h5 class="card-header"><a href="https://github.com/tcvdijk/fast-linear-carto">fast-linear-carto</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/tcvdijk/fast-linear-carto">fast-linear-carto</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">Realtime spatially-informative linear cartograms using least squares adjustment. Also useful for drawing metro maps in realtime.</p>
                                     <p class="text-muted">C++</p>
@@ -230,7 +251,7 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/armstrong.png" />
-                                <h5 class="card-header"><a href="https://github.com/tcvdijk/armstrong">armstrong</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/tcvdijk/armstrong">armstrong</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">Topologically safe rounding of geographic networks to a grid using two-stage simulated annealing.</p>
                                     <p class="text-muted">C++</p>
@@ -244,7 +265,7 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/story-bc.png" />
-                                <h5 class="card-header"><a href="https://github.com/tcvdijk/story-bc">story-bc</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/tcvdijk/story-bc">story-bc</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">Optimal block crossings in Storyline Visualisation: efficient fixed parameter tractable algorithm and a SAT-solver based solution.</p>
                                     <p class="text-muted">C++, Python</p>
@@ -261,7 +282,7 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/glyph-miner.png" />
-                                <h5 class="card-header"><a href="https://github.com/benedikt-budig/glyph-miner">glyph-miner</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/benedikt-budig/glyph-miner">glyph-miner</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">Fully production-ready system for rapidly extracting glyph occurrences from early type-set prints. Interactive user interface based on active learning.</p>
                                     <p class="text-muted">Python, Javascript, C++</p>
@@ -275,7 +296,7 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/jigglr.png" />
-                                <h5 class="card-header"><a href="https://github.com/tcvdijk/jigglr">jigglr</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/tcvdijk/jigglr">jigglr</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">Interactive local search to improve crowdsourced building footprints from historical maps.</p>
                                     <p class="text-muted">C#</p>
@@ -289,7 +310,7 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/lineman.png" />
-                                <h5 class="card-header"><a href="https://github.com/tcvdijk/lineman">lineman</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/tcvdijk/lineman">lineman</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">Tool for aligning GeoJSON LineStrings to bitmap images such as old maps; optimal alignment using an hidden Markov models.</p>
                                     <p class="text-muted">C++</p>
@@ -303,7 +324,7 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/building-sleuth.png" />
-                                <h5 class="card-header"><a href="https://github.com/tcvdijk/building-sleuth">building-sleuth</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/tcvdijk/building-sleuth">building-sleuth</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">Smart crowdsourcing workflow system for extracting building footprints: smart user interface for data entry and algorithmic data integration.</p>
                                     <p class="text-muted">Python, Javascript</p>
@@ -320,10 +341,10 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/wupstream.png" />
-                                <h5 class="card-header"><a href="https://github.com/tcvdijk/wupstream">wupstream</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/tcvdijk/wupstream">wupstream</a></h5>
                                 <div class="card-body">
-                                    <p class="card-text">Very fast calculation of upstream features in utility networks. Developed for the ACM SIGSPATIAL GIS Cup 2018. Second place of 15 at SIGSPATIAL Cup 2018.</p>
-                                    <p>
+                                    <p class="card-text">
+                                        Very fast calculation of upstream features in utility networks. Developed for the ACM SIGSPATIAL GIS Cup 2018. Second place of 15 at SIGSPATIAL Cup 2018.
                                         <a class="social-icon" href="https://www.youtube.com/watch?v=gQ6nT1gCVaE">
                                             <i class="fab fa-youtube"></i>
                                             YouTube
@@ -340,7 +361,7 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/fvsk.png" />
-                                <h5 class="card-header"><a href="https://github.com/tcvdijk/fvsk">fvsk</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/tcvdijk/fvsk">fvsk</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">Kernelisation, approximation and exact algorithms for Feedback Vertex Set and Loop Cutset.</p>
                                     <p class="text-muted">C++</p>
@@ -357,7 +378,7 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/frechet-demo.png" />
-                                <h5 class="card-header"><a href="https://go.uniwue.de/frechet">frechet-demo</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://go.uniwue.de/frechet">frechet-demo</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">Interactive visualisation of Fréchet-distance parameter space.</p>
                                     <p class="text-muted">Javascript</p>
@@ -368,7 +389,7 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/mini-ipe.png" />
-                                <h5 class="card-header"><a href="https://github.com/tcvdijk/mini-ipe">mini-ipe</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/tcvdijk/mini-ipe">mini-ipe</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">An easy, no-dependencies package for writing IPE files from Python. Ipe is an “extensible drawing editor” that is excellent for making diagrams for scientific papers and presentations. This makes its file format ideal as output from computational experiments.</p>
                                     <p class="text-muted">Python</p>
@@ -382,7 +403,7 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/haelight.png" />
-                                <h5 class="card-header"><a href="https://github.com/tcvdijk/haelight">haelight</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://github.com/tcvdijk/haelight">haelight</a></h5>
                                 <div class="card-body">
                                     <p class="card-text">Syntax highlighting for C++ code in Adobe After Effects text layers. Useful for making lecture videos involving code.</p>
                                     <p class="text-muted">Javascript</p>
@@ -396,9 +417,9 @@
                         <div class="col-sm-6">
                             <div class="card bg-light mb-5">
                                 <img class="card-img-top img-fluid" src="assets/img/azimut-tool.png" />
-                                <h5 class="card-header"><a href="https://azimut.polka-umwelt.de">azimut-tool</a></h5>
+                                <h5 class="card-header mt-2"><a href="https://azimut.polka-umwelt.de">azimut-tool</a></h5>
                                 <div class="card-body">
-                                    <p class="card-text">Website for determining the direction (azimuth) of rooftops from open digital orthophoto imagery. This is relevant for estimating the yield of solar panels.</p>
+                                    <p class="card-text">Website for determining the direction (azimuth) of rooftops from open digital orthophoto imagery. This is relevant for estimating the yield of solar panels. [In German]</p>
                                     <p class="text-muted">Javascript</p>
                                     <a href="https://azimut.polka-umwelt.de">Link</a>
                                 </div>
